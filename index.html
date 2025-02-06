@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Talk Demos</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <span class="logo">Spatial</span>
+            <nav class="header-nav">
+                <span class="header-nav__mobile-menu">Menu</span>
+                <ul class="header-nav__list">
+                    <li class="header-nav__item">Products</li>
+                    <li class="header-nav__item">News</li>
+                    <li class="header-nav__item">About Us</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero-block block">
+            <h1>furnitures</h1>
+        </section>
+        <section class="content-block theme--green content--reverse">
+            <div class="content-block__inner">
+                <div class="content">
+                    <article>
+                        <h2>Heirloom Quality. Modern Design.</h2>
+                        <p>We believe in the enduring beauty of handcrafted furniture.  Our artisans meticulously select the finest materials and employ time-honored techniques to create pieces that are as exquisite as they are durable.  Each detail tells a story of dedication and unparalleled skill.</p>
+                    </article>
+                    <button class="btn">
+                        <span>Explore our collections</span>
+                        <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 40 40"><rect width="40" height="40" rx="20" fill="#fff"/><path d="m21 15 5 5m-5 5 5-5m0 0H14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </div>
+                <picture class="media">
+                    <source srcset="https://plus.unsplash.com/premium_photo-1664300099235-979cc144deaf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                    <img src="https://plus.unsplash.com/premium_photo-1664300099235-979cc144deaf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="family sitting in couch" />
+                </picture>
+            </div>
+        </section>
+        <section class="title-block block">
+            <h2>Focus on Personalization & Bespoke Service</h2>
+        </section>
+        <section class="gallery-block">
+            <aside class="gallery-block__thumbnails">
+                <ul class="gallery-block__thumbnails-list">
+                    <li class="gallery-block__thumbnails-item">
+                        <label class="gallery-thumbnail" for="gallery-thumbnail-0">
+                            <img src="https://images.unsplash.com/photo-1693899849404-c65b391d3d74?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="thumbnail 0">
+                            <div>
+                                <h3>Wool</h3>
+                                <span>+</span>
+                            </div>
+                        </label>
+                    </li>
+                    <li class="gallery-block__thumbnails-item">
+                        <label class="gallery-thumbnail" for="gallery-thumbnail-1">
+                            <img src="https://images.unsplash.com/photo-1610123172042-79ce0a768615?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="thumbnail 1">
+                            <div>
+                                <h3>Leather</h3>
+                                <span>+</span>
+                            </div>
+                        </label>
+                    </li>
+                    <li class="gallery-block__thumbnails-item">
+                        <label class="gallery-thumbnail" for="gallery-thumbnail-2">
+                            <img src="https://plus.unsplash.com/premium_photo-1723200798590-705460a60e5f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="thumbnail 2">
+                            <div>
+                                <h3>Cotton</h3>
+                                <span>+</span>
+                            </div>
+                        </label>
+                    </li>
+                </ul>
+            </aside>
+            <div class="gallery-block__preview">
+                <input type="radio" name="gallery-thumbnail" id="gallery-thumbnail-0" checked>
+                <div class="gallery-thumbnail">
+                    <img src="https://images.unsplash.com/photo-1693899849404-c65b391d3d74?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="thumbnail 0">
+                    <div>
+                        <h3>Wool</h3>
+                        <span>→</span>
+                    </div>
+                </div>
+                <input type="radio" name="gallery-thumbnail" id="gallery-thumbnail-1">
+                <div class="gallery-thumbnail">
+                    <img src="https://images.unsplash.com/photo-1610123172042-79ce0a768615?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="thumbnail 1">
+                    <div>
+                        <h3>Leather</h3>
+                        <span>→</span>
+                    </div>
+                </div>
+                <input type="radio" name="gallery-thumbnail" id="gallery-thumbnail-2">
+                <div class="gallery-thumbnail">
+                    <img src="https://plus.unsplash.com/premium_photo-1723200798590-705460a60e5f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="thumbnail 2">
+                    <div>
+                        <h3>Cotton</h3>
+                        <span>→</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="block">
+        <span>spatial</span>
+    </footer>
+</body>
+</html>

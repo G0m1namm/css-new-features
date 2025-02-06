@@ -1,0 +1,127 @@
+:root {
+    --border-r: clamp(0.25rem, 0.25rem + 1.25vw, 0.4rem);
+    --gap: clamp(0.25rem, 0.25rem + 1.25vw, 0.4rem);
+    --black: #212121;
+    --white: #fefafa;
+    --green: #0e9378;
+    --orange: #e84824;
+    --theme-color: var(--white);
+}
+
+:is(*,*::after, *::before) {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  block-size: 100%;
+  background-color: black;
+  container-type: inline-size;
+  position: relative;
+}
+
+main {
+  position: relative;
+  background-color: black;
+  padding-block-end: var(--gap);
+  z-index: 1;
+}
+
+.theme--orange {
+  --theme-color: var(--orange);
+}
+
+.theme--green {
+  --theme-color: var(--green);
+}
+
+.theme--black {
+  --theme-color: var(--black);
+}
+
+.theme--white {
+  --theme-color: var(--black);
+}
+
+.block {
+  margin-top: var(--gap);
+  margin-inline: var(--gap);
+}
+
+.btn {
+  appearance: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  inline-size: fit-content;
+  border: none;
+  border-radius: var(--border-r);
+  padding-inline: clamp(0.5rem, 0.5rem + 1.25vw, 1rem);
+  padding-block: clamp(0.3rem, 0.3rem + 1.25vw, 0.75rem);
+  font-size: clamp(0.5rem, 0.5rem + 1.25vw, 1.25rem);
+  font-weight: 500;
+  gap: clamp(0.5rem, 0.5rem + 1.25vw, 1rem);
+
+  background-color: var(--orange);
+  color: var(--white);
+
+  > svg {
+    inline-size: clamp(1.5rem, 1.5rem + 1.25vw, 3rem);
+    color: var(--orange);
+  }
+}
+
+@container content style(--theme-color: var(--black)) {
+  .btn {
+    background-color: var(--green);
+    color: var(--black);
+
+    svg {
+      color: var(--black);
+    }
+  }
+}
+
+@container content style(--theme-color: var(--orange)) {
+  .btn {
+    background-color: var(--black);
+    color: var(--white);
+
+    svg {
+      color: var(--orange);
+    }
+  }
+}
+
+@container content style(--theme-color: var(--green)) {
+  .btn {
+    background-color: var(--black);
+    color: var(--white);
+
+    svg {
+      color: var(--black);
+    }
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.8;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+section, picture {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 10%;
+}
